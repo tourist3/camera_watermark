@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_camera">
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.mobileheros.camera.ui.camera.CameraFragment"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/navigation_subscribe"
+        android:name="com.mobileheros.camera.ui.subscribe.SubscribeFragment"
+        android:label="@string/title_subscribe"
+        tools:layout="@layout/fragment_subscribe" />
+    <fragment
+        android:id="@+id/navigation_subscribe_single"
+        android:name="com.mobileheros.camera.ui.subscribe.SubscribeFragment"
+        android:label="@string/title_subscribe"
+        tools:layout="@layout/fragment_subscribe" />
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.mobileheros.camera.ui.about.SettingFragment"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_setting_to_web"
+            app:destination="@id/navigation_web" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_web"
+        android:name="com.mobileheros.camera.ui.web.WebFragment"
+        tools:layout="@layout/fragment_web" />
+    <dialog
+        android:id="@+id/navigation_unlock_premium_dialog"
+        android:name="com.mobileheros.camera.ui.dialog.UnlockPremiumDialog"
+        tools:layout="@layout/dialog_unlock_premium">
+        <action
+            android:id="@+id/action_dialog_to_subscribe"
+            app:destination="@id/navigation_subscribe_single" />
+    </dialog>
+</navigation>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "786505739373",
+    "project_id": "bgremover-12a44",
+    "storage_bucket": "bgremover-12a44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786505739373:android:81c6d7b1102ebf4f762364",
+        "android_client_info": {
+          "package_name": "com.backgroundremover.imagecrop.bgremoval"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIlM-JMtDpoNZmFNlI7wOBDHGd2O-M088"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786505739373:android:6f587755cdb0fc98762364",
+        "android_client_info": {
+          "package_name": "com.mobileheros.airemovebg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIlM-JMtDpoNZmFNlI7wOBDHGd2O-M088"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
